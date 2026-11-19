@@ -272,4 +272,11 @@ h2 {
   gap: 24px;
 }
 
+.card {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
