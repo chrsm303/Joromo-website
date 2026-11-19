@@ -256,6 +256,15 @@ nav a.active {
   margin-bottom: 6px;
 }
 
+h2 {
+  font-size: 1.85rem;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.section-header p {
+  color: #475569;
+}
 
 
 
