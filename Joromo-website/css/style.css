@@ -245,4 +245,9 @@ nav a.active {
   border-bottom: 1px solid #e2e8f0;
 }
 
+.section-header {
+  max-width: 640px;
+  margin-bottom: 32px;
+}
+
 
