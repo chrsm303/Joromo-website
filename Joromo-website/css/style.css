@@ -337,3 +337,20 @@ h2 {
   padding: 4px 12px;
   border-radius: 20px;
 }
+
+/* Call-to-Action Banner */
+.c-banner {
+  background-color: #0284c7;
+  color: #ffffff;
+  text-align: center;
+  padding: 56px 20px;
+}
+
+.c-banner h2 {
+  color: #ffffff;
+}
+
+.c-banner p {
+  max-width: 600px;
+  margin: 0 auto 22px auto;
+}
