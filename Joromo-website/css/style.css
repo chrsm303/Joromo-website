@@ -311,3 +311,13 @@ h2 {
   margin-bottom: 14px;
 }
 
+.card-link {
+  color: #0284c7;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
