@@ -266,5 +266,10 @@ h2 {
   color: #475569;
 }
 
+/* Cards Grid */
+.card-grid {
+  display: flex;
+  gap: 24px;
+}
 
 
