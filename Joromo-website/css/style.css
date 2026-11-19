@@ -296,3 +296,18 @@ h2 {
   padding: 36px 16px;
   border-bottom: 1px solid #cbd5e1;
 }
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.card-body p {
+  color: #475569;
+  margin-bottom: 14px;
+}
+
