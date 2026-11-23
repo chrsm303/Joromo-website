@@ -394,3 +394,15 @@ footer a:hover {
   font-size: 0.9rem;
 }
 
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .about-layout,
+  .card-grid,
+  .footer-grid {
+    flex-direction: column;
+  }
+}
