@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products / Catalog | JoCare Pharmacy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Information Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <span>Open Mon–Sat: 8:00 AM – 8:00 PM | Sun: 9:00 AM – 5:00 PM</span>
+      <span class="status-pill"><span id="live-status-dot" class="status-dot"></span><span id="live-status-text">Open Now</span></span>
+      <a href="tel:+639559505269">Call Us: (+63) 955 950 5269</a>
+    </div>
+  </div>
+
+  <!-- Header and Navigation -->
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo.svg.png" alt="JoCare Pharmacy Logo" width="38" height="38">
+        <span>JoCare Pharmacy</span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html" class="active">Products / Catalog</a></li>
+          <li><a href="contact.html">Contact &amp; Refill</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <p class="section-label">OTC Product Catalog &amp; Search</p>
+        <h1>Over-the-Counter Medicines &amp; Wellness Directory</h1>
+        <p>Search live in-store pricing and product availability across OTC medicines, vitamins, skincare, and medical supplies before visiting.</p>
+      </div>
+    </section>
+
+    <!-- Searchable Product Directory -->
+    <section class="section-light">
+      <div class="container">
+        <!-- Search and Category Filter Controls -->
+        <div class="catalog-controls">
+          <input type="text" id="product-search" class="search-input" placeholder="Search products (e.g., Vitamin C, Thermometer, Paracetamol)..." aria-label="Search OTC Products">
+          <div class="filter-buttons">
+            <button type="button" class="filter-btn active" data-filter="all">All Items</button>
+            <button type="button" class="filter-btn" data-filter="otc">OTC Medicines</button>
+            <button type="button" class="filter-btn" data-filter="vitamins">Vitamins</button>
+            <button type="button" class="filter-btn" data-filter="skincare">Skincare</button>
+            <button type="button" class="filter-btn" data-filter="supplies">Medical Supplies</button>
+          </div>
+        </div>
+
+        <p id="no-products-msg" style="display:none; text-align:center; padding:30px; color:#475569; font-weight:600;">
+          No matching products found. Try another keyword or select "All Items".
+        </p>
+
+        <div class="card-grid">
+          <article class="card product-item" data-category="otc" data-name="Paracetamol 500mg (10 Tabs)">
+            <div class="product-banner teal">Paracetamol 500mg (10 Tabs)</div>
+            <div class="card-body">
+              <p class="category-tag">OTC Medicines</p>
+              <h3>Paracetamol 500mg (10 Tabs)</h3>
+              <p>Fast-acting relief for fever, headaches, and mild body aches.</p>
+              <p class="price">&#8369;45.00</p>
+              <span class="status-badge">In Stock</span>
+              <a href="contact.html#refill-section" class="card-link">Reserve for Pickup &rarr;</a>
+            </div>
+          </article>
+          <article class="card product-item" data-category="otc" data-name="Cetirizine 10mg Antihistamine">
+            <div class="product-banner">Cetirizine 10mg Antihistamine</div>
+            <div class="card-body">
+              <p class="category-tag">OTC Medicines</p>
+              <h3>Cetirizine 10mg Antihistamine</h3>
+              <p>24-hour non-drowsy relief for seasonal allergies and sneezing.</p>
+              <p class="price">&#8369;120.00</p>
+              <span class="status-badge">In Stock</span>
+              <a href="contact.html#refill-section" class="card-link">Reserve for Pickup &rarr;</a>
+            </div>
+          </article>
+          <article class="card product-item" data-category="otc" data-name="Antacid Chewable Tablets">
+            <div class="product-banner teal">Antacid Chewable Tablets</div>
+            <div class="card-body">
+              <p class="category-tag">OTC Medicines</p>
+              <h3>Antacid Chewable Tablets</h3>
+              <p>Quick relief for acid indigestion, heartburn, and upset stomach.</p>
+              <p class="price">&#8369;95.00</p>
+              <span class="status-badge">In Stock</span>
+              <a href="contact.html#refill-section" class="card-link">Reserve for Pickup &rarr;</a>
+            </div>
+          </article>
+          <article class="card product-item" data-category="vitamins" data-name="Vitamin C 500mg + Zinc">
+            <div class="product-banner">Vitamin C 500mg + Zinc</div>
+            <div class="card-body">
+              <p class="category-tag">Vitamins</p>
+              <h3>Vitamin C 500mg + Zinc</h3>
+              <p>Daily immune system defense supplement (30 capsules).</p>
+              <p class="price">&#8369;350.00</p>
+              <span class="status-badge">In Stock</span>
+              <a href="contact.html#refill-section" class="card-link">Reserve for Pickup &rarr;</a>
+            </div>
+          </article>
+          <article class="card product-item" data-category="vitamins" data-name="Multivitamins + Iron Complex">
+            <div class="product-banner teal">Multivitamins + Iron Complex</div>
+            <div class="card-body">
+              <p class="category-tag">Vitamins</p>
+              <h3>Multivitamins + Iron Complex</h3>
+              <p>Complete daily energy and nutritional support for adults.</p>
+              <p class="price">&#8369;420.00</p>
+              <span class="status-badge">In Stock</span>
+              <a href="contact.html#refill-section" class="card-link">Reserve for Pickup &rarr;</a>
+            </div>
+          </article>
+          <article class="card product-item" data-category="vitamins" data-name="Omega-3 Fish Oil 1000mg">
+            <div class="product-banner">Omega-3 Fish Oil 1000mg</div>
+            <div class="card-body">
+              <p class="category-tag">Vitamins</p>
+              <h3>Omega-3 Fish Oil 1000mg</h3>
+              <p>Supports cardiovascular health and joint mobility.</p>
+              <p class="price">&#8369;580.00</p>
+              <span class="status-badge low">Low Stock</span>
+              <a href="contact.html#refill-section" class="card-link">Reserve for Pickup &rarr;</a>
+            </div>
+          </article>
+          <article class="card product-item" data-category="skincare" data-name="Gentle Hydrating Cleanser">
+            <div class="product-banner teal">Gentle Hydrating Cleanser</div>
+            <div class="card-body">
+              <p class="category-tag">Skincare</p>
+              <h3>Gentle Hydrating Cleanser</h3>
+              <p>Fragrance-free, dermatologist-tested daily cleanser for sensitive skin.</p>
+              <p class="price">&#8369;290.00</p>
+              <span class="status-badge">In Stock</span>
+              <a href="contact.html#refill-section" class="card-link">Reserve for Pickup &rarr;</a>
+            </div>
+          </article>
+          <article class="card product-item" data-category="skincare" data-name="SPF 50+ Daily Sunblock">
+            <div class="product-banner">SPF 50+ Daily Sunblock</div>
+            <div class="card-body">
+              <p class="category-tag">Skincare</p>
+              <h3>SPF 50+ Daily Sunblock</h3>
+              <p>Broad-spectrum UV protection suitable for everyday outdoor use.</p>
+              <p class="price">&#8369;410.00</p>
+              <span class="status-badge">In Stock</span>
+              <a href="contact.html#refill-section" class="card-link">Reserve for Pickup &rarr;</a>
+            </div>
+          </article>
+          <article class="card product-item" data-category="supplies" data-name="Home First-Aid Emergency Kit">
+            <div class="product-banner">Home First-Aid Emergency Kit</div>
+            <div class="card-body">
+              <p class="category-tag">Medical Supplies</p>
+              <h3>Home First-Aid Emergency Kit</h3>
+              <p>Includes sterile gauze, antiseptic wipes, bandages, and medical tape.</p>
+              <p class="price">&#8369;650.00</p>
+              <span class="status-badge">In Stock</span>
+              <a href="contact.html#refill-section" class="card-link">Reserve for Pickup &rarr;</a>
+            </div>
+          </article>
+          <article class="card product-item" data-category="supplies" data-name="Digital Clinical Thermometer">
+            <div class="product-banner teal">Digital Clinical Thermometer</div>
+            <div class="card-body">
+              <p class="category-tag">Medical Supplies</p>
+              <h3>Digital Clinical Thermometer</h3>
+              <p>Fast 10-second fever reading with clear LCD display and memory recall.</p>
+              <p class="price">&#8369;350.00</p>
+              <span class="status-badge">In Stock</span>
+              <a href="contact.html#refill-section" class="card-link">Reserve for Pickup &rarr;</a>
+            </div>
+          </article>
+          <article class="card product-item" data-category="supplies" data-name="Automatic BP Monitor">
+            <div class="product-banner">Automatic BP Monitor</div>
+            <div class="card-body">
+              <p class="category-tag">Medical Supplies</p>
+              <h3>Automatic BP Monitor</h3>
+              <p>Upper-arm digital blood pressure monitor with large high-contrast digits.</p>
+              <p class="price">&#8369;1,450.00</p>
+              <span class="status-badge">In Stock</span>
+              <a href="contact.html#refill-section" class="card-link">Reserve for Pickup &rarr;</a>
+            </div>
+          </article>
+          <article class="card product-item" data-category="supplies" data-name="Pulse Oximeter Fingertip">
+            <div class="product-banner teal">Pulse Oximeter Fingertip</div>
+            <div class="card-body">
+              <p class="category-tag">Medical Supplies</p>
+              <h3>Pulse Oximeter Fingertip</h3>
+              <p>Accurate blood oxygen saturation (SpO2) and pulse rate measurement.</p>
+              <p class="price">&#8369;520.00</p>
+              <span class="status-badge low">Low Stock</span>
+              <a href="contact.html#refill-section" class="card-link">Reserve for Pickup &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Call-to-Action -->
+    <section class="c-banner">
+      <div class="container">
+        <h2>Looking for a Prescription Medication?</h2>
+        <p>Submit your prescription online 24/7 and our team will prepare your order for fast pickup or senior delivery.</p>
+        <a href="contact.html#refill-section" class="button-outline">Go to Prescription Portal</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>JoCare Pharmacy</h3>
+          <p>Your trusted local community pharmacy dedicated to patient-centered care, medication safety, and accessible health education.</p>
+        </div>
+        <div>
+          <h3>Visit &amp; Contact</h3>
+          <p>Musuan, Maramag, Bukidnon<br>Phone: (+63) 955 950 5269<br>Mon–Sat: 8:00 AM – 8:00 PM | Sun: 9:00 AM – 5:00 PM</p>
+        </div>
+        <div>
+          <h3>Quick Navigation</h3>
+          <p>
+            <a href="contact.html#refill-section">24/7 Prescription Refill</a><br>
+            <a href="contact.html#booking-section">Schedule Vaccination / Screening</a><br>
+            <a href="products.html">OTC Product Catalog</a><br>
+            <a href="contact.html#qa-section">Ask a Pharmacist</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Not for medical emergencies. For urgent emergencies, call your local emergency hotline. &copy; 2026 JoCare Pharmacy. All rights reserved. Developed by Chrismarie D. Joromo.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
