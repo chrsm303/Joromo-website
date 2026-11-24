@@ -268,8 +268,8 @@ h2 {
 
 /* Cards Grid */
 .card-grid {
-  display: flex;
   gap: 24px;
+  display : flex;
 }
 
 .card {
