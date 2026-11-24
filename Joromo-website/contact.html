@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Refill | JoCare Pharmacy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Information Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <span>Open Mon–Sat: 8:00 AM – 8:00 PM | Sun: 9:00 AM – 5:00 PM</span>
+      <span class="status-pill"><span id="live-status-dot" class="status-dot"></span><span id="live-status-text">Open Now</span></span>
+      <a href="tel:+639559505269">Call Us: (+63) 955 950 5269</a>
+    </div>
+  </div>
+
+  <!-- Header and Navigation -->
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo.svg.png" alt="JoCare Pharmacy Logo" width="38" height="38">
+        <span>JoCare Pharmacy</span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products / Catalog</a></li>
+          <li><a href="contact.html" class="active">Contact &amp; Refill</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <p class="section-label">24/7 Patient Portal</p>
+        <h1>Prescription Refills, Consultations &amp; Store Locator</h1>
+        <p>Submit prescription refill requests, schedule vaccinations or health screenings, or message our licensed pharmacists directly.</p>
+      </div>
+    </section>
+
+    <!-- Interactive Forms & Store Locator Section -->
+    <section class="section-light">
+      <div class="container contact-layout">
+        <!-- Left Column: Interactive Forms -->
+        <div>
+          <!-- Feature 1: 24/7 Prescription Refill Request Form -->
+          <div id="refill-section" class="form-card">
+            <p class="section-label">Feature 1 • 24/7 Online Portal</p>
+            <h2>Prescription Refill Request Form</h2>
+            <p>Submit your RX number and upload a photo of your prescription so we can prepare your order prior to arrival.</p>
+
+            <form id="refill-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="refill-name">Patient Full Name *</label>
+                  <input type="text" id="refill-name" required placeholder="e.g., Maria Clara Santos">
+                </div>
+                <div class="form-group">
+                  <label for="refill-phone">Mobile Number *</label>
+                  <input type="tel" id="refill-phone" required placeholder="e.g., 0955 950 5269">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="refill-rx">Prescription (RX) Number *</label>
+                  <input type="text" id="refill-rx" required placeholder="e.g., RX-2026-8841">
+                </div>
+                <div class="form-group">
+                  <label for="refill-med">Medication Name &amp; Dosage</label>
+                  <input type="text" id="refill-med" placeholder="e.g., Losartan 50mg (30 tabs)">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="refill-file">Upload Prescription Image (JPG, PNG, or PDF)</label>
+                <input type="file" id="refill-file" accept=".jpg,.jpeg,.png,.pdf">
+              </div>
+
+              <div class="form-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="refill-delivery">
+                  <span>Request Home Medicine Delivery (Available for Seniors 55+ &amp; Chronic Patients)</span>
+                </label>
+              </div>
+
+              <button type="submit" class="button-primary">Submit Refill Request</button>
+              <div id="refill-feedback" class="form-feedback" role="status"></div>
+            </form>
+          </div>
+
+          <!-- Feature 3: Health Consultation Scheduler -->
+          <div id="booking-section" class="form-card">
+            <p class="section-label">Feature 3 • Clinic Appointment Booking</p>
+            <h2>Health Consultation &amp; Vaccination Scheduler</h2>
+            <p>Reserve a dedicated clinic time slot to prevent waiting room congestion.</p>
+
+            <form id="booking-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="book-name">Patient Name *</label>
+                  <input type="text" id="book-name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                  <label for="book-phone">Contact Number *</label>
+                  <input type="tel" id="book-phone" required placeholder="09XX XXX XXXX">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="book-service">Select Healthcare Service *</label>
+                <select id="book-service" required>
+                  <option value="Seasonal Flu Vaccination">Seasonal Flu Vaccination</option>
+                  <option value="Blood Pressure & Vital Signs Screening">Blood Pressure &amp; Vital Signs Screening</option>
+                  <option value="Senior Care Medication Consultation">Senior Care Medication Consultation</option>
+                  <option value="Blood Glucose Monitoring">Blood Glucose Monitoring</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="book-date">Preferred Date *</label>
+                  <input type="date" id="book-date" required>
+                </div>
+                <div class="form-group">
+                  <label for="book-time">Preferred Time Window *</label>
+                  <select id="book-time" required>
+                    <option value="Morning (8:30 AM – 11:30 AM)">Morning (8:30 AM – 11:30 AM)</option>
+                    <option value="Afternoon (1:30 PM – 4:30 PM)">Afternoon (1:30 PM – 4:30 PM)</option>
+                    <option value="Early Evening (5:00 PM – 7:00 PM)">Early Evening (5:00 PM – 7:00 PM)</option>
+                  </select>
+                </div>
+              </div>
+
+              <button type="submit" class="button-blue">Confirm Appointment</button>
+              <div id="booking-feedback" class="form-feedback" role="status"></div>
+            </form>
+          </div>
+
+          <!-- Feature 5: Pharmacist Direct Q&A Contact Form -->
+          <div id="qa-section" class="form-card">
+            <p class="section-label">Feature 5 • Direct Pharmacy Support</p>
+            <h2>Pharmacist Direct Q&amp;A Contact Form</h2>
+            <p>Submit non-emergency medication questions securely to our licensed pharmacy staff.</p>
+
+            <form id="qa-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="qa-name">Your Name *</label>
+                  <input type="text" id="qa-name" required placeholder="Your name">
+                </div>
+                <div class="form-group">
+                  <label for="qa-email">Email or Phone *</label>
+                  <input type="text" id="qa-email" required placeholder="you@example.com or 09XX...">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="qa-question">Your Medication or Health Question *</label>
+                <textarea id="qa-question" rows="4" required placeholder="Ask about dosage instructions, OTC compatibility, or product availability..."></textarea>
+              </div>
+
+              <button type="submit" class="button-primary">Send Question to Pharmacist</button>
+              <div id="qa-feedback" class="form-feedback" role="status"></div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Right Column: Feature 4 Interactive Store Locator & Hours -->
+        <aside>
+          <div class="sidebar-card">
+            <p class="section-label">Feature 4 • Store Locator</p>
+            <h3>JoCare Pharmacy Location &amp; Hours</h3>
+            <p style="margin-bottom: 12px; color:#334155;">
+              <strong>Address:</strong> National Highway, Musuan, Maramag, Bukidnon (Near CMU Main Gate)
+            </p>
+            <p style="margin-bottom: 14px; color:#334155;">
+              <strong>Direct Line:</strong> <a href="tel:+639559505269">(+63) 955 950 5269</a><br>
+              <strong>Parking:</strong> Free front-lot customer &amp; PWD accessible parking available.
+            </p>
+
+            <table class="hours-table">
+              <tr><td>Monday – Saturday</td><td>8:00 AM – 8:00 PM</td></tr>
+              <tr><td>Sunday</td><td>9:00 AM – 5:00 PM</td></tr>
+              <tr><td>Public Holidays</td><td>9:00 AM – 4:00 PM</td></tr>
+              <tr><td>Online RX Refill Portal</td><td>Open 24 / 7</td></tr>
+            </table>
+
+            <iframe
+              class="map-frame"
+              title="Map showing JoCare Pharmacy in Musuan, Maramag, Bukidnon"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=125.0400%2C7.8520%2C125.0650%2C7.8720&amp;layer=mapnik&amp;marker=7.8615%2C125.0525">
+            </iframe>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>Emergency Notice</h3>
+            <p style="color:#475569; font-size:0.95rem;">
+              Our online Q&amp;A form is for non-emergency medication inquiries only. If you are experiencing severe allergic reactions, chest pain, or a medical emergency, please proceed immediately to the nearest hospital emergency room or call your local emergency hotline.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>JoCare Pharmacy</h3>
+          <p>Your trusted local community pharmacy dedicated to patient-centered care, medication safety, and accessible health education.</p>
+        </div>
+        <div>
+          <h3>Visit &amp; Contact</h3>
+          <p>Musuan, Maramag, Bukidnon<br>Phone: (+63) 955 950 5269<br>Mon–Sat: 8:00 AM – 8:00 PM | Sun: 9:00 AM – 5:00 PM</p>
+        </div>
+        <div>
+          <h3>Quick Navigation</h3>
+          <p>
+            <a href="contact.html#refill-section">24/7 Prescription Refill</a><br>
+            <a href="contact.html#booking-section">Schedule Vaccination / Screening</a><br>
+            <a href="products.html">OTC Product Catalog</a><br>
+            <a href="contact.html#qa-section">Ask a Pharmacist</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Not for medical emergencies. For urgent emergencies, call your local emergency hotline. &copy; 2026 JoCare Pharmacy. All rights reserved. Developed by Chrismarie D. Joromo.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
