@@ -258,48 +258,6 @@ nav a.active {
   font-size: 1.05rem;
 }
 
-/* About Section */
-.about-layout {
-  display: flex;
-  align-items: center;
-  gap: 48px;
-}
-
-.about-text {
-  flex: 1;
-}
-
-.section-label {
-  color: #0d9488;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  letter-spacing: 0.5px;
-  margin-bottom: 8px;
-}
-
-.about-text h2 {
-  font-size: 1.9rem;
-  color: #0f172a;
-  margin-bottom: 16px;
-}
-
-.about-text p {
-  color: #334155;
-  margin-bottom: 16px;
-}
-
-.about-image {
-  flex: 1;
-}
-
-.about-image img {
-  width: 100%;
-  border-radius: 12px;
-  border: 1px solid #cbd5e1;
-}
-
-
 /* Content Sections */
 .section-white{
   background-color: #ffffff;
@@ -332,6 +290,56 @@ h2 {
 
 .section-header p {
   color: #475569;
+}
+
+/* Two-Column Split (About & Services) */
+.about-layout {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.about-layout.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text p {
+  color: #334155;
+  margin-bottom: 16px;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+}
+
+.checklist {
+  list-style: none;
+  margin: 16px 0 22px 0;
+}
+
+.checklist li {
+  padding-left: 26px;
+  position: relative;
+  margin-bottom: 8px;
+  color: #1e293b;
+}
+
+.checklist li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: #0d9488;
+  font-weight: 700;
 }
 
 /* Cards Grid */
@@ -405,6 +413,49 @@ h2 {
   padding: 4px 12px;
   border-radius: 20px;
 }
+
+/* About Section */
+.about-layout {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.section-label {
+  color: #0d9488;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.about-text h2 {
+  font-size: 1.9rem;
+  color: #0f172a;
+  margin-bottom: 16px;
+}
+
+.about-text p {
+  color: #334155;
+  margin-bottom: 16px;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+}
+
+
 
 /* Call-to-Action Banner */
 .c-banner {
