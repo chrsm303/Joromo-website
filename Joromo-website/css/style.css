@@ -239,6 +239,25 @@ nav a.active {
   color: #e2e8f0;
 }
 
+/* Page Header (Inner Pages) */
+.page-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #cbd5e1;
+  padding: 46px 0;
+}
+
+.page-header h1 {
+  font-size: 2.15rem;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  max-width: 680px;
+  color: #475569;
+  font-size: 1.05rem;
+}
+
 /* About Section */
 .about-layout {
   display: flex;
