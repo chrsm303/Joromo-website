@@ -13,6 +13,11 @@ Dark Slate: #0f172a
     padding: 0;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Segoe UI', 'Inter', Arial, sans-serif;
     font-size: 17px;
@@ -24,6 +29,14 @@ body {
 img {
   max-width: 100%;
   display: block;
+}
+
+a {
+  color: #0284c7
+}
+
+:focus-visible {
+  outline: 3px solid #0d9488
 }
 
 .container {
@@ -53,6 +66,22 @@ img {
     text-decoration: none;
     font-weight: bold;
 }
+
+.top-bar a:hover{
+  text-decoration:underline
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #10b981;
+}
+
+.status-dot.closed {
+  background-color: #f59e0b;
+}
+
 
 /* Header & Navigation */
 header {
@@ -108,6 +137,64 @@ nav a.active {
   color: #0284c7;
   border-bottom: 3px solid #0284c7;
   border-radius: 0;
+}
+
+/* Buttons */
+.button-primary {
+  display: inline-block;
+  padding: 13px 26px;
+  margin-right: 12px;
+  margin-bottom: 10px;
+  background-color: #0d9488;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 2px solid #0d9488;
+  border-radius: 8px;
+}
+
+.button-primary:hover {
+  background-color: #0f766e;
+  border-color: #0f766e;
+}
+
+.button-outline {
+  display: inline-block;
+  padding: 13px 26px;
+  margin-right: 12px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+}
+
+.button-outline:hover {
+  background-color: #ffffff;
+  color: #0284c7;
+}
+
+.button-blue {
+  display: inline-block;
+  padding: 12px 22px;
+  background-color: #0284c7;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  font-family: inherit;
+  text-decoration: none;
+  border: 2px solid #0284c7;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-blue:hover {
+  background-color: #0369a1;
+  border-color: #0369a1;
 }
 
 /* Hero Section */
@@ -193,44 +280,6 @@ nav a.active {
   border: 1px solid #cbd5e1;
 }
 
-/* Buttons */
-.button-primary {
-  display: inline-block;
-  padding: 13px 26px;
-  margin-right: 12px;
-  margin-bottom: 10px;
-  background-color: #0d9488;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 1rem;
-  text-decoration: none;
-  border: 2px solid #0d9488;
-  border-radius: 8px;
-}
-
-.button-primary:hover {
-  background-color: #0f766e;
-  border-color: #0f766e;
-}
-
-.button-outline {
-  display: inline-block;
-  padding: 13px 26px;
-  margin-right: 12px;
-  margin-bottom: 10px;
-  background-color: transparent;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 1rem;
-  text-decoration: none;
-  border: 2px solid #ffffff;
-  border-radius: 8px;
-}
-
-.button-outline:hover {
-  background-color: #ffffff;
-  color: #0284c7;
-}
 
 /* Content Sections */
 .section-white{
